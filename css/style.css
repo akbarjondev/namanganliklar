@@ -184,9 +184,6 @@ img {
   display: block;
 }
 /* MAIN-BODY */
-<<<<<<< HEAD
-
-
 .news-box {
     display: flex;
     justify-content: space-between;
@@ -227,7 +224,6 @@ img {
     font-weight: 300;
 }
 
-=======
 /*latest-news*/
 
 .latest-news {
