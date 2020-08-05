@@ -499,17 +499,6 @@ img {
   margin-left: auto;
 }
 .notification-button {
-<<<<<<< HEAD
-  width: 264px;
-  text-align: center;
-  color: #fff;
-  font-weight: 500;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  padding: 8px;
-  background-image: linear-gradient(90deg, #fe5c28 0%, rgba(255, 139, 54, 0.9) 88.43%);
-=======
     width: 264px;
     text-align: center;
     color: #fff;
@@ -565,7 +554,6 @@ img {
 
 .download-option img{
   margin: 10px;
->>>>>>> 4644412b1e7cdab5d9e0968fe671b2bd2a0c8bd5
 }
 
 /* SITE-FOOTER */
