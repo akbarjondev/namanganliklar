@@ -147,6 +147,10 @@ img {
   color: #ffffff;
   background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
   border-radius: 5px;
+  transition: all 300ms;
+}
+.tg-sub:hover {
+  box-shadow: 0 0 5px #1e96c8;
 }
 .tg-icon {
   margin-right: 7px;
@@ -507,8 +511,11 @@ img {
     border-radius: 5px;
     padding: 8px;
     background-image: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+    transition: box-shadow 300ms;
 }
-
+.notification-button:hover {
+  box-shadow: 0 0 5px #FE5C28;
+}
 /* app download section */
 .download-apps {
   width: 1200px;
