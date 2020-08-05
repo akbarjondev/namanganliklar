@@ -147,6 +147,10 @@ img {
   color: #ffffff;
   background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
   border-radius: 5px;
+  transition: all 300ms;
+}
+.tg-sub:hover {
+  box-shadow: 0 0 5px #1e96c8;
 }
 .tg-icon {
   margin-right: 7px;
@@ -183,6 +187,69 @@ img {
 .nrg-img {
   display: block;
 }
+
+/* COV stats */
+.stats {
+  background: #F6F6F9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stats li {
+  list-style-type: none;
+  margin: 20px 15px;
+  display: flex;
+  align-items: center;
+}
+.stat {
+  width: 250px;
+}
+.stat::before {
+  content:"";
+  width: 2px;
+  height: 49px;
+  background-color:#f4ccd1;
+}
+.infected::before{
+  content: "";
+  width: 2px;
+  height: 74px;
+  background: #eb5569;
+}
+.stats-location {
+  width: 360px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.stats-location h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.stat h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.infected p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #db0000;
+}
+.recovered p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #05b135;
+}
+.stats li img {
+  margin: 0 10px;
+}
+.stats-txt h4, p {
+  margin: 0 0 5px 0;
+}
+
 /* MAIN-BODY */
 .news-box {
   display: flex;
@@ -193,14 +260,17 @@ img {
 }
 .news {
   width: 386px;
-  overflow: hidden;
   margin: 18px 0;
 }
-.news a {
+.img-wrapper {
+  overflow: hidden;
+}
+.news-link {
+  display: block;
   text-decoration: none;
   color: #202020;
 }
-.news:hover a {
+.news:hover a > p {
   color: #1b6ca8;
 }
 .news img {
@@ -213,93 +283,24 @@ img {
   transform: scale(1.01);
   transition: transform 0.3s ease;
 }
-.news p {
+.news-link p {
   margin: 0;
   margin-top: 11px;
   font-size: 17px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #202020;
 }
 .data-time {
-  width: 1250px;
+  display: block;
+  margin-top: 11px;
   font-size: 14px;
+  line-height: 17px;
   font-weight: 300;
+  color: #6b6d97;
 }
-
-/* COV stats */
-.stats {
-  background: #F6F6F9;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.stats li {
-  list-style-type: none;
-  margin: 20px 15px;
-  display: flex;
-  align-items: center;
-}
-
-.stat {
-  width: 250px;
-}
-
-.stat::before {
-  content:"";
-  width: 2px;
-  height: 49px;
-  background-color:#F4CCD1;
-}
-
-.infected::before{
-  content: "";
-  width: 2px;
-  height: 74px;
-  background: #EB5569;
-}
-
-.stats-location {
-  width: 360px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.stats-location h5 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  margin-left: 15px;
-}
-
-.stat h4 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.infected p {
-  font-size: 18px;
-  line-height: 21px;
-  color: #DB0000;
-}
-
-.recovered p {
-  font-size: 18px;
-  line-height: 21px;
-  color: #05B135;
-}
-
-.stats li img {
-  margin: 0 10px;
-}
-
-.stats-txt h4, p {
-  margin: 0 0 5px 0;
-}
-/* =============================================== */
 
 /*latest-news*/
-
 .latest-news {
   display: flex;
   align-items: flex-start;
@@ -498,6 +499,7 @@ img {
   margin-left: auto;
 }
 .notification-button {
+<<<<<<< HEAD
   width: 264px;
   text-align: center;
   color: #fff;
@@ -507,6 +509,63 @@ img {
   border-radius: 5px;
   padding: 8px;
   background-image: linear-gradient(90deg, #fe5c28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+=======
+    width: 264px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-image: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+    transition: box-shadow 300ms;
+}
+.notification-button:hover {
+  box-shadow: 0 0 5px #FE5C28;
+}
+/* app download section */
+.download-apps {
+  width: 1200px;
+  background: #F6F6F9;
+  border-radius: 5px;
+}
+
+.download-apps {
+  align-items: center;
+  display: flex;
+  padding: 40px 20px 0 20px;
+  border-radius: 5px;
+  margin: 50px 0 40px 0;
+}
+
+.app-description {
+  display: flex;
+  width: 800px;
+}
+
+.app-description-txt h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;  
+  color: #295093;
+  margin-bottom: 10px;
+}
+
+.app-description-txt p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.download-option {
+  display: flex;
+}
+
+.download-option img{
+  margin: 10px;
+>>>>>>> 4644412b1e7cdab5d9e0968fe671b2bd2a0c8bd5
 }
 
 /* SITE-FOOTER */
@@ -519,10 +578,17 @@ img {
   justify-content: space-between;
   border-bottom: 3px solid #133c82;
 }
-.footer-top-left {
-  background: #133c82;
-  border-radius: 5px;
-  padding: 6px 12px;
+.footer-logo {
+  display: block;
+}
+  .footer-logo:focus,
+  .footer-logo:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #ffffff;
+    outline: none;
+  }
+.dark-logo {
+  display: block;
 }
 .footer-top-left a {
   text-decoration: none;
@@ -577,9 +643,10 @@ img {
   text-decoration: none;
   color: #ffffff;
 }
-.site-bottom a:hover {
-  text-decoration: underline;
-}
+  .site-bottom a:hover,
+  .site-bottom a:focus {
+    text-decoration: underline;
+  }
 .about-site {
   width: 365px;
 }
