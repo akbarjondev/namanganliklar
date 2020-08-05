@@ -509,6 +509,49 @@ img {
     background-image: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
 }
 
+/* app download section */
+.download-apps {
+  width: 1200px;
+  background: #F6F6F9;
+  border-radius: 5px;
+}
+
+.download-apps {
+  align-items: center;
+  display: flex;
+  padding: 40px 20px 0 20px;
+  border-radius: 5px;
+  margin: 50px 0 40px 0;
+}
+
+.app-description {
+  display: flex;
+  width: 800px;
+}
+
+.app-description-txt h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;  
+  color: #295093;
+  margin-bottom: 10px;
+}
+
+.app-description-txt p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.download-option {
+  display: flex;
+}
+
+.download-option img{
+  margin: 10px;
+}
+
 /* SITE-FOOTER */
 
 
