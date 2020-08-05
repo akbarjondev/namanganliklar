@@ -224,6 +224,80 @@ img {
   font-weight: 300;
 }
 
+/* COV stats */
+.stats {
+  background: #F6F6F9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats li {
+  list-style-type: none;
+  margin: 20px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.stat {
+  width: 250px;
+}
+
+.stat::before {
+  content:"";
+  width: 2px;
+  height: 49px;
+  background-color:#F4CCD1;
+}
+
+.infected::before{
+  content: "";
+  width: 2px;
+  height: 74px;
+  background: #EB5569;
+}
+
+.stats-location {
+  width: 360px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.stats-location h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 15px;
+}
+
+.stat h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.infected p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #DB0000;
+}
+
+.recovered p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #05B135;
+}
+
+.stats li img {
+  margin: 0 10px;
+}
+
+.stats-txt h4, p {
+  margin: 0 0 5px 0;
+}
+/* =============================================== */
+
 /*latest-news*/
 
 .latest-news {
